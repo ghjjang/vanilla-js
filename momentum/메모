@@ -1,0 +1,27 @@
+const age = parseInt(prompt("Enter your age "));
+
+function krAge(age) {
+    // 외국 나이로 한국나이 계산
+    if (age >= 0 && age <= 100) {
+        return age + 1;
+    }
+    else {
+        alert("잘못된 나이입니다.");
+        return -1;
+    }
+}
+const krAgeResult = krAge(age);
+
+
+function checkAge(krAgeResult) {
+    // 한국 나이로 음주 가능 여부 확인
+    if (krAgeResult >= 20) {
+        alert("음주가 가능한 나이입니다.");
+    }
+    else {
+        alert("음주가 불가능한 나이입니다.");
+    }
+    return age ;
+}
+
+checkAge(krAge(age));
